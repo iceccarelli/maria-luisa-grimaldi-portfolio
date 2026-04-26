@@ -924,26 +924,81 @@ export default function HomePage() {
                 ))}
               </ul>
             </div>
-
-            {/* Live Repos */}
+            {/* Technology Tools for Real Estate Professionals */}
             <div className="glass-panel live-panel" style={{ gridColumn: "1 / -1" }}>
               <div className="live-panel-header">
                 <span className="live-panel-title">Technology Tools</span>
-                <span className="live-badge">GitHub</span>
+                <span className="live-badge">Trending 2026</span>
               </div>
               <div className="repo-list" style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "0.75rem" }}>
-                {repos.map((r) => (
-                  <div key={r.name} className="repo-card">
-                    <div className="repo-name">{r.name}</div>
-                    <div className="repo-desc">{r.description}</div>
-                    <div className="repo-meta">
-                      <span>{r.language}</span>
-                      <span>{r.stars} stars</span>
-                    </div>
+                
+                {/* HouseSigma */}
+                <a 
+                  href="https://housesigma.com/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="repo-card"
+                  style={{ textDecoration: 'none', color: 'inherit' }}
+                >
+                  <div className="repo-name">HouseSigma</div>
+                  <div className="repo-desc">Real-time sold prices, market trends, neighbourhood analytics, and instant property alerts across the entire GTA. The #1 tool used by Toronto agents.</div>
+                  <div className="repo-meta">
+                    <span>Market Intelligence</span>
+                    <span>100K+ Agents</span>
                   </div>
-                ))}
+                </a>
+
+                {/* Matterport */}
+                <a 
+                  href="https://matterport.com/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="repo-card"
+                  style={{ textDecoration: 'none', color: 'inherit' }}
+                >
+                  <div className="repo-name">Matterport</div>
+                  <div className="repo-desc">Industry-leading 3D virtual tours and digital twins. Dramatically increases buyer engagement and reduces showing requests by up to 50%.</div>
+                  <div className="repo-meta">
+                    <span>Virtual Tours</span>
+                    <span>Industry Standard</span>
+                  </div>
+                </a>
+
+                {/* DocuSign */}
+                <a 
+                  href="https://www.docusign.com/real-estate" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="repo-card"
+                  style={{ textDecoration: 'none', color: 'inherit' }}
+                >
+                  <div className="repo-name">DocuSign</div>
+                  <div className="repo-desc">Secure electronic signatures trusted by real estate professionals worldwide. Fast, compliant, and paperless closings from anywhere.</div>
+                  <div className="repo-meta">
+                    <span>E-Signatures</span>
+                    <span>1M+ REALTORS®</span>
+                  </div>
+                </a>
+
+                {/* Zolo.ca */}
+                <a 
+                  href="https://www.zolo.ca/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="repo-card"
+                  style={{ textDecoration: 'none', color: 'inherit' }}
+                >
+                  <div className="repo-name">Zolo.ca</div>
+                  <div className="repo-desc">Advanced Canadian listings platform with price history, school rankings, neighbourhood insights, and powerful search filters used daily by GTA professionals.</div>
+                  <div className="repo-meta">
+                    <span>Listings &amp; Data</span>
+                    <span>Top GTA Agents</span>
+                  </div>
+                </a>
+
               </div>
             </div>
+
           </div>
         </div>
       </section>
